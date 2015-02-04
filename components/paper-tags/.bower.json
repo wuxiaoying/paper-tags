@@ -1,0 +1,37 @@
+{
+  "name": "paper-tags",
+  "authors": [
+    "Helen Wu <xiaoyingw12@gmail.com>"
+  ],
+  "description": "paper tags",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "paper-tags"
+  ],
+  "main": "paper-tags.html",
+  "license": "MIT",
+  "homepage": "https://github.com/wuxiaoying/paper-tags/",
+  "ignore": [
+    "/.*",
+    "/tests/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.2",
+    "paper-elements": "Polymer/paper-elements#~0.5.4",
+    "paper-dropdown-menu-ex": "*"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^2.0.5"
+  },
+  "_release": "f1e6c741cc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f1e6c741ccccc0e220ddb4a7b7e9c577aa00e06b"
+  },
+  "_source": "git://github.com/wuxiaoying/paper-tags.git",
+  "_target": "*",
+  "_originalSource": "paper-tags"
+}

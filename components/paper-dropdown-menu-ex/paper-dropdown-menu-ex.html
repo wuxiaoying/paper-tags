@@ -1,0 +1,15 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../paper-dropdown/paper-dropdown.html">
+<link rel="import" href="paper-dropdown-decorator.html">
+
+<polymer-element name="paper-dropdown-menu-ex" attributes="label dropdownLabel disabled">
+  <template>
+    <link rel="stylesheet" href="paper-dropdown-menu-ex.css">
+    <paper-dropdown-decorator id="decorator" label="{{label}}" floatingLabel disabled="{{disabled}}">
+      <paper-dropdown-menu id="dropdown" label="{{dropdownLabel}}" disabled="{{disabled}}">
+      </paper-dropdown-menu>
+    </paper-dropdown-decorator>
+  </template>
+  <script src="paper-dropdown-menu-ex.js"></script>
+</polymer-element>
