@@ -1,0 +1,15 @@
+<link href="../polymer/polymer.html" rel="import">
+
+<link href="../core-icon/core-icon.html" rel="import">
+<link href="../core-icons/core-icons.html" rel="import">
+
+<polymer-element name="paper-tag" attributes="tag">
+  <template>
+    <link rel="stylesheet" href="paper-tag.css">
+    <div horizontal layout id="tag" center>
+      <div>{{tag}}</div>
+      <core-icon icon="close" class="tag-icon gray" on-tap="{{onCloseTap}}"></core-icon>
+    </div>
+  </template>
+  <script src="paper-tag.js"></script>
+</polymer-element>
