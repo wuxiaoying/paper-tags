@@ -21,8 +21,7 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^0.5.2",
     "paper-elements": "Polymer/paper-elements#~0.5.4",
-    "paper-dropdown-menu-ex": "*",
-    "paper-tags": "*"
+    "paper-dropdown-menu-ex": "*"
   },
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^2.0.5"
