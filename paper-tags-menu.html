@@ -39,7 +39,6 @@
         margin: 0.75em 0;
         border-bottom: 1px solid #757575;
         outline: none;
-        height: 29px;
       }
 
       #label:not(.selectedItem), #arrow {
@@ -58,9 +57,11 @@
       <template if="{{tags.length==0}}">
         <div id="label">{{label}}</div>
       </template>
-      <template repeat="{{tag in tags}}">
-        <paper-tag tag="{{tag}}" on-delete="{{onDeleteTag}}"></paper-tag>
-      </template>
+      <div>
+        <template repeat="{{tag in tags}}">
+          <paper-tag tag="{{tag}}" on-delete="{{onDeleteTag}}"></paper-tag>
+        </template>
+      </div>
     </div>
     <core-icon id="arrow" icon="{{opened ? openedIcon : closedIcon}}"></core-icon>
 

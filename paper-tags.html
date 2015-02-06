@@ -6,10 +6,15 @@
 <link rel="import" href="../paper-dropdown-menu-ex/paper-dropdown-decorator.html">
 <link rel="import" href="paper-tags-menu.html">
 
-<polymer-element name="paper-tags" attributes="value tags label dropdownLabel disabled">
+<polymer-element name="paper-tags" attributes="value tags label dropdownLabel disabled error isInvalid">
   <template>
     <link rel="stylesheet" href="paper-tags.css">
-    <paper-dropdown-decorator id="decorator" label="{{label}}" floatingLabel disabled="{{disabled}}">
+    <paper-dropdown-decorator id="decorator"
+      label="{{label}}"
+      disabled="{{disabled}}"
+      error="{{error}}"
+      isInvalid="{{isInvalid}}"
+      floatingLabel>
       <paper-tags-menu  id="dropdown"
                         tags="{{value}}"
                         label="{{dropdownLabel}}"
@@ -17,7 +22,7 @@
                         on-remove="{{onRemove}}"
                         on-add="{{onAdd}}">
         <paper-dropdown-ex class="dropdown" transition="">
-          <core-menu selected="{{value}}" multi valueattr="tag">
+          <core-menu id="menu" selected="{{value}}" multi valueattr="tag">
             <template repeat="{{tag in tags}}">
               <paper-item tag="{{tag}}">{{tag}}</paper-item>
             </template>
